@@ -1,11 +1,18 @@
 import { staticRequest } from 'tinacms'
 import { Layout } from '../../components/Layout'
 import {TinaMarkdown} from "tinacms/dist/rich-text";
+import {Codeblock} from "../../components/Codeblock"
 export default function Home(props) {
+
+  const components = {
+    code_block: props => {
+      return <Codeblock children={props.children} language={props.language}/>
+    }
+  }
 
   return (
     <Layout>
-      <TinaMarkdown content={props.data.getPostDocument.data.body}/>
+      <TinaMarkdown content={props.data.getPostDocument.data.body} components={components}/>
     </Layout>
   )
 }
