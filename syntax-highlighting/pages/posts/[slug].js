@@ -6,7 +6,7 @@ export default function Home(props) {
 
   const components = {
     code_block: props => {
-      return <Codeblock children={props.children} language={props.language}/>
+      return <Codeblock children={props.children} language={props.lang}/>
     }
   }
 
