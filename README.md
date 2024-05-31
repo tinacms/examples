@@ -1,7 +1,6 @@
 # Tina Examples 
 
-This repo contains examples of how to do specific tasks with Tina. Each folder 
-will is a self contained example. Please refer to the README.md in each example
+This repo contains examples of how to do specific tasks with Tina. Each folder is a self contained example. Please refer to the README.md in each example
 for more information/context.
 
 ## Learn More
